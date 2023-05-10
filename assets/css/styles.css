@@ -1,0 +1,73 @@
+/* =============== GOOGLE FONT ============ */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+
+/* =============== VARIABLES CSS ============ */
+:root {
+  --header-height: 4.5rem;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Raleway", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --normal-font-size: 0.875rem;
+
+  /* Color mode */
+  --body-color: #e5e5e5;
+  --nav-color: #ffffff;
+  --text-color: #464646;
+  --second-text-color: #2a7ae4;
+}
+
+/* =============== BASE ============ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============== NAV ============ */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  background-color: var(--nav-color);
+  padding: 0 1.177rem;
+}
+
+.nav__logo {
+  width: 6.25rem;
+}
+
+.nav__button {
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: 8.313rem;
+  height: 2.5rem;
+  background-color: var(--nav-color);
+  color: var(--second-text-color);
+  border: 1px solid var(--second-text-color);
+  cursor: pointer;
+}
