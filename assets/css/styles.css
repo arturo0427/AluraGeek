@@ -8,14 +8,23 @@
   /*========== Font and typography ==========*/
   --body-font: "Raleway", sans-serif;
 
-  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-  --normal-font-size: 0.875rem;
+  /* .875rem = 14px, 1rem = 16px, 1.375rem = 22px ... */
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --big-font-size: 1.375rem;
 
   /* Color mode */
   --body-color: #e5e5e5;
   --nav-color: #ffffff;
+  --footer-color: #EAF2FD;
   --text-color: #464646;
+  --text-color-white: #ffffff;
   --second-text-color: #2a7ae4;
+
+  /* Margins */
+  --mb-1-17: 1.125rem;
+
+
 }
 
 /* =============== BASE ============ */
@@ -48,26 +57,84 @@ img {
 
 /* =============== NAV ============ */
 
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.8rem;
   height: var(--header-height);
   background-color: var(--nav-color);
-  padding: 0 1.177rem;
+  padding: 0 var(--mb-1-17);
 }
 
 .nav__logo {
   width: 6.25rem;
 }
 
-.nav__button {
-  font-size: 0.875rem;
+.nav__button-login {
+  font-size: var(--small-font-size);
   font-weight: 600;
-  width: 8.313rem;
+  width: 8.31rem;
   height: 2.5rem;
   background-color: var(--nav-color);
   color: var(--second-text-color);
   border: 1px solid var(--second-text-color);
   cursor: pointer;
+}
+
+.nav__button-login:hover {
+  background-color: var(--second-text-color);
+  border: 1px solid var(--nav-color);
+  color: var(--text-color-white);
+  transition: .25s;
+}
+
+.nav__search-content {
+  display: none;
+}
+
+/* =============== BANNER ============ */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 12rem;
+  margin: 0;
+  /* background-image: url("../img/banner-image.png"); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../img/banner-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: var(--mb-1-17);
+}
+
+.banner__title,
+.banner__description,
+.banner__button {
+  color: var(--nav-color);
+}
+
+.banner__description {
+  font-size: var(--small-font-size);
+  margin: 0.5rem 0;
+}
+
+.banner__button {
+  width: 7.3rem;
+  height: 2.5rem;
+  background-color: var(--second-text-color);
+  color: var(--text-color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+}
+
+.banner__button:hover {
+  background-color: #5c97e3;
+  border: 1px solid var(--text-color-white);
+  transition: .2s;
 }
