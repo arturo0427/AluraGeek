@@ -1,48 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>E-commerce Alura</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <title>E-commerce Alura</title>
-</head>
-
-<body>
-  <header class="header" id="header">
-    <nav class="nav">
-      <div class="nav__logo">
-        <img src="assets/img/Logo.png" alt="Logo">
-      </div>
-      <div class="nav__button">
-        <button class="nav__button-login">Iniciar sesión</button>
-      </div>
-      <div class="nav__search">
-        <div class="nav__search-button">
-          <a href="#"><img src="assets/img/icons/lupa.png" alt="Lupa" /></a>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="assets/img/Logo.png" alt="Logo" />
         </div>
-        <div class="nav__search-content">
-          <input type="text" placeholder="Buscar">
-          <button class="nav__search-btn">Buscar</button>
+        <div class="nav__button">
+          <button class="nav__button-login">Iniciar sesión</button>
         </div>
-      </div>
-    </nav>
-  </header>
+        <div class="nav__search">
+          <div class="nav__search-button">
+            <a href="#"><img src="assets/img/icons/lupa.png" alt="Lupa" /></a>
+          </div>
+          <div class="nav__search-content">
+            <input type="text" placeholder="Buscar" />
+            <button class="nav__search-btn">Buscar</button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <main class="main" id="main">
+    <main class="main" id="main">
+      <!-- ================ BANNER =============== -->
+      <section class="banner">
+        <h2 class="banner__title">Febrero Promocional</h2>
+        <span class="banner__description"
+          >Productos selecionados con 33% de descuento</span
+        >
+        <a class="banner__button" href="#">Ver Consolas</a>
+      </section>
 
-    <!-- ================ BANNER =============== -->
-    <section class="banner">
-      <h2 class="banner__title">Febrero Promocional</h2>
-      <span class="banner__description">Productos selecionados con 33% de descuento</span>
-      <a class="banner__button" href="#">Ver Consolas</a>
-    </section>
+      <!-- ================ CATEGORIAS =============== -->
+      <section class="categories">
+        <!-- ================ CATEGORIA 2 =============== -->
+        <div class="categories__content">
+          <div class="categories__header">
+            <h2 class="categories__header-title">Star Wars</h2>
+            <a href="#" class="categories__header-btn">
+              Ver todo
+              <img src="assets/img/icons/arrow-right.png" alt="arrow-right" />
+            </a>
+          </div>
+          <!-- ================ PRODUCTS =============== -->
+          <div class="categories__listProducts">
+            <!-- ================ PRODUCT 1 =============== -->
+            <div class="categories__product">
+              <div class="categories__product-img">
+                <img src="assets/img/products/star-wars.png" alt="" />
+              </div>
+              <div class="categories__product-data">
+                <h3>Producto XYZ</h3>
+                <span>R$ 60,00</span>
+                <a href="#">Ver producto</a>
+              </div>
+            </div>
+            <!-- ================ PRODUCT 2 =============== -->
+            <div class="categories__product">
+              <div class="categories__product-img">
+                <img src="assets/img/products/star-wars.png" alt="" />
+              </div>
+              <div class="categories__product-data">
+                <h3>Producto XYZ</h3>
+                <span>R$ 60,00</span>
+                <a href="#">Ver producto</a>
+              </div>
+            </div>
+            <!-- ================ PRODUCT 3 =============== -->
+            <div class="categories__product">
+              <div class="categories__product-img">
+                <img src="assets/img/products/star-wars.png" alt="" />
+              </div>
+              <div class="categories__product-data">
+                <h3>Producto XYZ</h3>
+                <span>R$ 60,00</span>
+                <a href="#">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================ CATEGORIA 1 =============== -->
+        <div class="categories__content">
+          <div class="categories__header">
+            <h2 class="categories__header-title">Star Wars</h2>
+            <a href="#" class="categories__header-btn">
+              Ver todo
+              <img src="assets/img/icons/arrow-right.png" alt="arrow-right" />
+            </a>
+          </div>
+          <!-- ================ PRODUCTS =============== -->
+          <div class="categories__listProducts">
+            <!-- ================ PRODUCT 1 =============== -->
+            <div class="categories__product">
+              <div class="categories__product-img">
+                <img src="assets/img/products/star-wars.png" alt="" />
+              </div>
+              <div class="categories__product-data">
+                <h3>Producto XYZ</h3>
+                <span>R$ 60,00</span>
+                <a href="#">Ver producto</a>
+              </div>
+            </div>
+            <!-- ================ PRODUCT 2 =============== -->
+            <div class="categories__product">
+              <div class="categories__product-img">
+                <img src="assets/img/products/star-wars.png" alt="" />
+              </div>
+              <div class="categories__product-data">
+                <h3>Producto XYZ</h3>
+                <span>R$ 60,00</span>
+                <a href="#">Ver producto</a>
+              </div>
+            </div>
+            <!-- ================ PRODUCT 3 =============== -->
+            <div class="categories__product">
+              <div class="categories__product-img">
+                <img src="assets/img/products/star-wars.png" alt="" />
+              </div>
+              <div class="categories__product-data">
+                <h3>Producto XYZ</h3>
+                <span>R$ 60,00</span>
+                <a href="#">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    
-
-
-  </main>
-</body>
-
+      <!-- ================ FOOTER =============== -->
+      <footer class="footer" id="footer">
+        <div class="footer__content">
+          <div class="footer__content-logo">
+            <img src="assets/img/Logo.png" alt="Logo" />
+          </div>
+          <div class="footer__content-list">
+            <a href="#">Quienes somos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anúncie aquí</a>
+          </div>
+          <div class="footer__content-form">
+            <span>Hable con nosotros</span>
+            <form action="#">
+              <div class="input-container">
+                <input type="text" id="myInput" required />
+                <label for="myInput">Nombre</label>
+              </div>
+              <div class="input-container">
+                <textarea
+                  name="menssage"
+                  id="message"
+                  cols="auto"
+                  rows="5"
+                ></textarea>
+                <label for="myInput">Nombre</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__description">
+          <p>Desarrollado por Arturo Muñoz</p>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
