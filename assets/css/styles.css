@@ -17,6 +17,7 @@
   --body-color: #e5e5e5;
   --nav-color: #ffffff;
   --footer-color: #eaf2fd;
+  --bg-input: #F5F5F5;
   --text-color: #464646;
   --text-color-alt: #A2A2A2;
   --text-color-white: #ffffff;
@@ -61,7 +62,6 @@ img {
 }
 
 /* =============== NAV ============ */
-
 .nav {
   display: flex;
   align-items: center;
@@ -311,3 +311,55 @@ img {
 
 /* ================ MEDIA QUERY ================== */
 
+@media screen and (min-width: 768px) {
+
+  /* =============== NAV ============ */
+  .nav {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    padding-top: 10px;
+    column-gap: 40px;
+  }
+
+  .nav__search-button {
+    display: none;
+  }
+
+  .nav__logo {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    order: 1;
+    width: 100px;
+  }
+
+  .nav__search {
+    order: 2;
+  }
+  
+  .nav__button {
+    justify-self: end;
+    order: 3;
+  }
+
+  .nav__search-content {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-input);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+
+  .nav__search-content input {
+    border: none;
+    outline: none;
+    background-color: var(--bg-input);
+  }
+
+  .nav__search-content input::placeholder {
+    color: var(--text-color-alt);
+  }
+
+
+
+}
