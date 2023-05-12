@@ -233,9 +233,6 @@ img {
 
 .footer__content {
   padding: 16px 0;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .footer__content-logo {
@@ -311,3 +308,6 @@ img {
   color: var(--second-text-color);
   font-weight: 700;
 }
+
+/* ================ MEDIA QUERY ================== */
+
