@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+
+    <title>Login - Alura</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="../assets/img/Logo.png" alt="Logo" />
+        </div>
+        <div class="nav__search">
+          <div class="nav__search-button">
+            <a id="btn_search" href="#"
+              ><img src="../assets/img/icons/lupa.png" alt="Lupa"
+            /></a>
+          </div>
+          <div class="nav__search-content">
+            <input type="text" placeholder="¿Que desea buscar?" />
+            <img src="../assets/img/icons/lupa.png" alt="Lupa" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <!-- ================ CONTENT =============== -->
+
+      <section class="form">
+        <div class="form__login">
+          <div class="form__login-title">
+            <h2>Iniciar Sesión</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================ FOOTER =============== -->
+      <footer class="footer" id="footer">
+        <div class="footer__content">
+          <div class="footer__content-logo">
+            <img src="../assets/img/Logo.png" alt="Logo" />
+          </div>
+          <div class="footer__content-list">
+            <a href="#">Quienes somos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anúncie aquí</a>
+          </div>
+          <div class="footer__content-form">
+            <span>Hable con nosotros</span>
+            <form action="#">
+              <div class="footer__contact-inputs">
+                <div class="footer__contact">
+                  <label for="" class="footer__label">Nombre</label>
+                  <input
+                    required
+                    type="text"
+                    name="name"
+                    class="footer__input"
+                  />
+                </div>
+                <div class="footer__contact">
+                  <label class="footer__label" for="myInput"
+                    >Escribe tu mensaje</label
+                  >
+                  <textarea
+                    class="footer__input"
+                    name="menssage"
+                    id="message"
+                    cols="0"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div>
+                <a class="banner__button" type="submit"> Enviar </a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__description">
+          <p>
+            Desarrollado por
+            <a target="_blank" href="https://github.com/arturo0427"
+              >Arturo Muñoz</a
+            >. 2023
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -100,6 +100,20 @@ img {
   display: none;
 }
 
+.nav__search-content {
+  align-items: center;
+  background-color: var(--bg-input);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.nav__search-content input {
+  border: none;
+  outline: none;
+  background-color: var(--bg-input);
+  margin-right: 10px;
+}
+
 /* =============== BANNER ============ */
 
 .banner {
@@ -199,6 +213,27 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.content__icon {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+  left: 55%;
+  top: 5px;
+}
+
+.icon {
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.icon:hover {
+  color: var(--second-text-color);
+  transition: .2s;
 }
 
 .categories__product-data {

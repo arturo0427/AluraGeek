@@ -1,11 +1,25 @@
 {
+    "categories": [
+        {
+            "id": 1,
+            "categorie": "Star Wars"
+        },
+        {
+            "id": 2,
+            "categorie": "Consolas"
+        },
+        {
+            "id": 3,
+            "categorie": "Diversos"
+        }
+    ],
     "products": [
         {
             "id": 1,
-            "name": "json-server",
-            "price": "typicode",
-            "imgURL": "typicode",
-            "description": "typicode"
+            "product": "Producto XYZ",
+            "price": "99.99",
+            "imgURL": "assets/img/products/consolas-1.png",
+            "description": "Es un producto"
         }
     ]
 }
