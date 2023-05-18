@@ -1,0 +1,12 @@
+.categories__header-btn {
+  border: none;
+  background-color: var(--second-text-color);
+  color: var(--text-color-white);
+  padding: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.categories__header-btn:hover {
+  filter: brightness(1.1);
+  transition: filter 0.3s ease;
+}

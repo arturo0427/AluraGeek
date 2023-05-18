@@ -193,6 +193,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(156px, 156px));
   grid-gap: 16px;
+  justify-content: space-between; 
 }
 
 .categories__product {
