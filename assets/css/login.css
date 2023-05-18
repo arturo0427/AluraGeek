@@ -35,6 +35,11 @@
   justify-content: center;
 }
 
+.form__login-button button {
+  border: none;
+  outline: none;
+}
+
 @media screen and (min-width: 768px) {
   .form__login {
     font-size: 1.5rem;
@@ -54,7 +59,7 @@
     font-size: 1.1rem;
   }
 
-  .form__login-button a {
+  .form__login-button button {
     width: 100%;
     font-size: 1.1rem;
   }

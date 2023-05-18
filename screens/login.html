@@ -39,16 +39,17 @@
             <h2>Iniciar Sesión</h2>
           </div>
           <div class="form__login-form">
-            <form action="#">
+            <form action="#" data-form>
               <div class="form__login-inputs">
                 <div class="form__login-inputs--input">
                   <!-- <label for="" class="form__label">Nombre</label> -->
                   <input
                     placeholder="Escriba su correo electrónico"
                     required
-                    type="text"
+                    type="email"
                     name="name"
                     class="footer__input"
+                    data-email
                   />
                 </div>
                 <div class="form__login-inputs--input">
@@ -59,11 +60,12 @@
                     type="password"
                     name="name"
                     class="footer__input"
+                    data-password
                   />
                 </div>
               </div>
               <div class="form__login-button">
-                <a class="banner__button" type="submit"> Entrar </a>
+                <button class="banner__button" type="submit"> Entrar </button>
               </div>
             </form>
           </div>
@@ -128,5 +130,6 @@
     </main>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../controllers/login-controller.js"></script>
   </body>
 </html>
