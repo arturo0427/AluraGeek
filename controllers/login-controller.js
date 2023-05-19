@@ -12,3 +12,4 @@ form.addEventListener("submit", (e) => {
     alert("Email y contraseña deben tener mas de 5 caracteres");
   }
 });
+
