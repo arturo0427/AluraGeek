@@ -5,18 +5,15 @@ const getCategory = (category) => {
   category_content.classList.add("categories__content");
 
   const content = `
-       <div class="categories__header">
-            <h2 class="categories__header-title">${category}</h2>
-            <a href="#" class="categories__header-btn">
-              Ver todo
-              <img src="assets/img/icons/arrow-right.png" alt="arrow-right" />
-            </a>
+         <div class="categories__header">
+              <h2 class="categories__header-title">${category}</h2>
+              <button class="categories__header-btn">Agregar producto</button>
+            </div>
+            <!-- ================ PRODUCTS =============== -->
+            <div class="categories__listProducts" id="${category}">
+                     
           </div>
-          <!-- ================ PRODUCTS =============== -->
-          <div class="categories__listProducts" id="${category}">
-                   
-        </div>
-  `;
+    `;
   category_content.innerHTML = content;
 
   return category_content;
@@ -27,15 +24,23 @@ const getProducts = (title, price, imgURL, id) => {
   card.classList.add("categories__product");
 
   const contenido = `       
-              <div class="categories__product-img">
-                <img src="${imgURL}" alt="${title}" />
-              </div>
-              <div class="categories__product-data">
-                <h3>${title}</h3>
-                <span>R$ ${price}</span>
-                <a href="#">Ver producto</a>
-              </div>       
-  `;
+                <div class="categories__product-img">
+                  <img src="${imgURL}" alt="${title}" />
+                  <div class="content__icon">
+                  <a href="#" class="icon">
+                    <i class="uil uil-trash-alt"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="uil uil-pen"></i>
+                  </a>
+                </div>F
+                </div>
+                <div class="categories__product-data">
+                  <h3>${title}</h3>
+                  <span>R$ ${price}</span>
+                  <a href="#">Ver producto</a>
+                </div>       
+    `;
   card.innerHTML = contenido;
   card.dataset.id = id;
   return card;
